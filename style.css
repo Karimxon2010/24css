@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: black;
+    font-weight: 900;
+}
+
+header nav ul li .orange {
+    color: orangered;
+}
+
+header nav ul:nth-child(1) img {
+    width: 200px;
+}
+
+header nav ul:nth-child(2) {
+    height: 200px;
+    justify-content: center;
+}
+
+header nav ul:nth-child(3) {
+    height: 200px;
+}
+
+header nav ul:nth-child(3) h1 {
+    top: 100px;
+    font-weight: 900;
+    font-size: 175px;
+    color: blue;
+    position: relative;
+    animation-name: worksAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+header nav ul:nth-child(3) h2 {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav .column {
+    flex-direction: column;
+}
+
+@keyframes worksAnime {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+.first {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wor {
+    font-weight: 900;
+    font-size: 200px;
+    color: rgba(0, 0, 255, 0.875);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+.card-first {
+    background-color: bisque;
+    width: 100%;
+}
+
+.card-wrapper {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 150px;
+    height: 500px;
+
+}
+
+.card-wrapper .card {
+    width: 48%;
+    padding: 15px;
+}
+
+.card-wrapper .card h1 {
+    animation-name: cardAnime;
+    animation-duration: 1s;
+}
+
+.cup-wrapp .cup img {
+    width: 300px;
+    height: 325px;
+    left: 40rem;
+}
+
+.card-wrapper .cards img {
+    width: 300px;
+    top: 65rem;
+    animation-name: cardTwo;
+    animation-duration: 1s;
+}
+
+@keyframes cardAnime {
+    0% {
+        transform: translate(-250px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes cardTwo {
+    0% {
+        transform: translate(250px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+
+    }
+}
+
+.cup-wrapp {
+    width: 100%;
+
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 150px;
+
+}
+
+.cup-wrapp .caps {
+    width: 45%;
+    padding: 15px;
+}
+
+.cup-wrapp .cup {
+    animation-name: cupAnime;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.cup-wrapp .caps h1 {
+    animation-duration: 0.7s;
+    animation-name: capsAnime;
+}
+
+.cup-wrapp .caps {
+    width: 600px;
+
+}
+
+@keyframes cupAnime {
+    0% {
+        
+        opacity: 0;
+        transform: translate(600px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes capsAnime {
+    0% {
+        opacity: 1;
+        transform: translate(-250px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+.cup-wrapp .cup p {
+    vertical-align: middle;
+    text-align: center;
+    margin: 90px;
+}
+
+.sub-wrapper {
+    border: 1px solid red;
+    height: 450px;
+    background-color: rgba(45, 45, 202, 0.764);
+    margin: auto;
+    text-align: center;
+}
+
+.sub {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 900px;
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+    color: white;
+
+}
+
+.btn {
+    background-color: orangered;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.ent {
+    border-radius: 15px;
+    border: none;
+    padding: 10px 70px 10px 70px;
+}
+
+.sam {
+    color: white;
+    margin: 80px;
+}
+
+footer {
+    background-color: black;
+    height: 80px;
+    border-radius: 0 0 15px 15px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+}
